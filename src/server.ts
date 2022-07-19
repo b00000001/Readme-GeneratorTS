@@ -6,7 +6,7 @@ import router from './controllers';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, '../../src/static')));
+app.use(express.static(path.join(__dirname, '../../src/public')));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '../../src/views'));
